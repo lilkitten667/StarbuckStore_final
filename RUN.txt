@@ -1,0 +1,428 @@
+CS1ACafe Did not pass Unization.
+In createOneStore(): Created store with name "1234 El Monte Road":
+Store Name: 1234 El Monte Road
+location: unknown unknown
+Result of the the Unionized Voting is: No, not unionized
+
+In testGetStateName(): testing getting the name of the state a store resides in.
+ Did not pass Unization.
+Passed in testGetStateName(): found the name of the state the store resides in to be CA.
+20th Street and 3rd Ave Unionize Passed and is a RTWstate! 
+Katella & Los Alamitos Did not pass Unization.
+Clares & 41st Unionize Passed and is a RTWstate! 
+Katella & Anaheim Unionize Passed and is a RTWstate! 
+Downtown Disney Store Unionize Passed and is a RTWstate! 
+Hwy 111 & Jefferson, La Quinta Unionize Passed and is a RTWstate! 
+2nd & Covina Did not pass Unization.
+Citrus & Rowland Did not pass Unization.
+Mason & Lassen Did not pass Unization.
+Burton & Rosemont Unionize Passed and is a RTWstate! 
+Main & Liberty Unionize Passed and is a RTWstate! 
+South University & Church Unionize Passed and is a RTWstate! 
+State & Liberty Unionize Passed and is a RTWstate! 
+Jackson & Zeeb Unionize Passed and is a RTWstate! 
+Glencoe Crossing Unionize Passed and is a RTWstate! 
+Grand River & Stoddard Unionize Passed and is a RTWstate! 
+Miller Road & I-75 Unionize Passed and is a RTWstate! 
+Lake Lansing & Kerry St Unionize Passed and is a RTWstate! 
+S. Saginaw Street Did not pass Unization.
+The Mall at Partridge Creek Unionize Passed and is a RTWstate! 
+Carpenter Rd. Unionize Passed and is a RTWstate! 
+
+In main(): Found 21 number of stores in our Starbucks corporation.
+
+In testAddStores(): testing if addStores will behave correctly if you try to add too many stores.
+Generic StarbucksStore Did not pass Unization.
+Passed in testAddStores(): When trying to add another StarbucksStore to a full theStarbucksCorporation, addStore returned false.
+
+In main(): Displaying all stores.
+Total stores in corportation: 21
+
+--- Store 0 ---
+Store Name: 20th Street and 3rd Ave
+location: Birmingham AL
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 1 ---
+Store Name: Katella & Los Alamitos
+location: Los Alamitos CA
+Result of the the Unionized Voting is: No, not unionized
+
+--- Store 2 ---
+Store Name: Clares & 41st
+location: Capitola CA
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 3 ---
+Store Name: Katella & Anaheim
+location: Anaheim CA
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 4 ---
+Store Name: Downtown Disney Store
+location: Anaheim CA
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 5 ---
+Store Name: Hwy 111 & Jefferson, La Quinta
+location: La Quinta CA
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 6 ---
+Store Name: 2nd & Covina
+location: Long Beach CA
+Result of the the Unionized Voting is: No, not unionized
+
+--- Store 7 ---
+Store Name: Citrus & Rowland
+location: Covina CA
+Result of the the Unionized Voting is: No, not unionized
+
+--- Store 8 ---
+Store Name: Mason & Lassen
+location: Los Angeles CA
+Result of the the Unionized Voting is: No, not unionized
+
+--- Store 9 ---
+Store Name: Burton & Rosemont
+location: Grand Rapids MI
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 10 ---
+Store Name: Main & Liberty
+location: Ann Arbor MI
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 11 ---
+Store Name: South University & Church
+location: Ann Arbor MI
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 12 ---
+Store Name: State & Liberty
+location: Ann Arbor MI
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 13 ---
+Store Name: Jackson & Zeeb
+location: Ann Arbor MI
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 14 ---
+Store Name: Glencoe Crossing
+location: Ann Arbor MI
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 15 ---
+Store Name: Grand River & Stoddard
+location: East Lansing MI
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 16 ---
+Store Name: Miller Road & I-75
+location: Flint MI
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 17 ---
+Store Name: Lake Lansing & Kerry St
+location: Lansing MI
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 18 ---
+Store Name: S. Saginaw Street
+location: Grand Blanc MI
+Result of the the Unionized Voting is: No, not unionized
+
+--- Store 19 ---
+Store Name: The Mall at Partridge Creek
+location: Clinton Township MI
+Result of the the Unionized Voting is: yes, unionized
+
+--- Store 20 ---
+Store Name: Carpenter Rd.
+location: Ann Arbor MI
+Result of the the Unionized Voting is: yes, unionized
+In printStoreNames(): Found 21 stores in Starbucks corporation.
+20th Street and 3rd Ave
+Katella & Los Alamitos
+Clares & 41st
+Katella & Anaheim
+Downtown Disney Store
+Hwy 111 & Jefferson, La Quinta
+2nd & Covina
+Citrus & Rowland
+Mason & Lassen
+Burton & Rosemont
+Main & Liberty
+South University & Church
+State & Liberty
+Jackson & Zeeb
+Glencoe Crossing
+Grand River & Stoddard
+Miller Road & I-75
+Lake Lansing & Kerry St
+S. Saginaw Street
+The Mall at Partridge Creek
+Carpenter Rd.
+
+In testGetRTWstate(): testing select stores Right to Work status.
+Passed in testGetRTWstate(): for Katella & Los Alamitos found RTW to be false.
+
+In testGetVoteResult(): testing select stores on whether they voted yes to unionize.
+Passed in testGetVoteResult(): for Katella & Los Alamitos found vote to be false.
+
+In testGetNumRTW(): testing getting the total number of stores with Right-to-Work laws.
+
+In testGetNumYesVoteResults(): testing getting the total number of stores that chose to unionize.
+
+In testStarbucksCorporationMain(): Tests StarbucksCorporation's main method by running it.
+Failed in testGetRTWstate(): for 20th Street and 3rd Ave found invalid RTW to be false when it should have been true.
+Failed in testGetVoteResult(): for 20th Street and 3rd Ave found invalid vote to be false when it should have been true.
+Failed in testGetNumRTW(): found invalid total number of stores with Right-to-Work laws to be 0 when it should have been 13.
+Failed in testGetNumYesVoteResults(): found invalid total number of stores that chose to unionize to be 0 when it should have been 16.
+outContent:
+Try creating a StarbucksCorporation object that is too small:
+
+Create a useful StarbucksCorporation object using the sample data:
+20th Street and 3rd Ave Unionize Passed and is a RTWstate! 
+Power & Baseline Road Unionize Passed and is a RTWstate! 
+Crismon & Southern Unionize Passed and is a RTWstate! 
+Indian School & 107th Ave Unionize Passed and is a RTWstate! 
+7th Street & Bell Unionize Passed and is a RTWstate! 
+54th St. & Ray Rd., Chandler Did not pass Unization.
+Mission & Dufour Unionize Passed and is a RTWstate! 
+Ocean & Water Unionize Passed and is a RTWstate! 
+Candlewood St. & Lakewood Blvd. Unionize Passed and is a RTWstate! 
+Redondo & 7th Unionize Passed and is a RTWstate! 
+2nd & Central Unionize Passed and is a RTWstate! 
+Katella & Los Alamitos Did not pass Unization.
+Clares & 41st Unionize Passed and is a RTWstate! 
+Katella & Anaheim Unionize Passed and is a RTWstate! 
+Downtown Disney Store Unionize Passed and is a RTWstate! 
+Hwy 111 & Jefferson, La Quinta Unionize Passed and is a RTWstate! 
+2nd & Covina Did not pass Unization.
+Citrus & Rowland Did not pass Unization.
+Mason & Lassen Did not pass Unization.
+Rock Creek Parkway Unionize Passed and is a RTWstate! 
+E Colfax Ave Unionize Passed and is a RTWstate! 
+S. Nevada and Brookside Unionize Passed and is a RTWstate! 
+Holly & Leetsdale Unionize Passed and is a RTWstate! 
+16th & Tremont Unionize Passed and is a RTWstate! 
+Garden of the Gods at Centennial Unionize Passed and is a RTWstate! 
+3rd and Columbine - Cherry Creek Unionize Passed and is a RTWstate! 
+Corbin's Corner Unionize Passed and is a RTWstate! 
+Palm Springs Mile Did not pass Unization.
+8th Ave & 49th St Did not pass Unization.
+John Knox & N. Monroe St Unionize Passed and is a RTWstate! 
+Ben Hill Griffin Parkway Did not pass Unization.
+52 Curtiss Pkwy Unionize Passed and is a RTWstate! 
+San Jose Blvd & Ricky Drive Unionize Passed and is a RTWstate! 
+1980 Can Marco Blvd Unionize Passed and is a RTWstate! 
+Mitchell Hammock & City Plaza Unionize Passed and is a RTWstate! 
+Augusta Exchange Unionize Passed and is a RTWstate! 
+Hwy 278 & Pace Did not pass Unization.
+I-75 & Howell Mill Unionize Passed and is a RTWstate! 
+Ansley Mall Unionize Passed and is a RTWstate! 
+Mililani Shopping Center Did not pass Unization.
+Northwest Hwy & Feinberg Drive Unionize Passed and is a RTWstate! 
+University & Main Unionize Passed and is a RTWstate! 
+Downtown La Grange Did not pass Unization.
+Ridge & Clark Unionize Passed and is a RTWstate! 
+W. Bryn Mawr & Winthrop - Edgewater Unionize Passed and is a RTWstate! 
+55th & Woodlawn - Hyde Park Unionize Passed and is a RTWstate! 
+Randolph & Wabash Did not pass Unization.
+Logan & California Did not pass Unization.
+Armitage & Hoyne - Bucktown Unionize Passed and is a RTWstate! 
+23rd & Ousdahl Unionize Passed and is a RTWstate! 
+Overland Park - 75th & I-35 Unionize Passed and is a RTWstate! 
+LaGrange and Factory Unionize Passed and is a RTWstate! 
+7700 Maple Street Unionize Passed and is a RTWstate! 
+Harvard St Unionize Passed and is a RTWstate! 
+Commonwealth Ave Unionize Passed and is a RTWstate! 
+Watertown - Mt. Auburn Unionize Passed and is a RTWstate! 
+Cleveland Circle Unionize Passed and is a RTWstate! 
+Allston Continuum Unionize Passed and is a RTWstate! 
+Beth Israel Unionize Passed and is a RTWstate! 
+Waban Unionize Passed and is a RTWstate! 
+Worcester, East Central Street Unionize Passed and is a RTWstate! 
+Westford Valley Marketplace Unionize Passed and is a RTWstate! 
+874 Commonwealth Ave Unionize Passed and is a RTWstate! 
+Tremont-South End Unionize Passed and is a RTWstate! 
+443 Boylston Street Unionize Passed and is a RTWstate! 
+Gardner, W. Broadway Unionize Passed and is a RTWstate! 
+Newtonville Did not pass Unization.
+Kendall Square Unionize Passed and is a RTWstate! 
+N Charles St Unionize Passed and is a RTWstate! 
+1700 W Nursery Road Unionize Passed and is a RTWstate! 
+16806 Georgia Ave - Olney Unionize Passed and is a RTWstate! 
+Nottingham Square Shopping Center Unionize Passed and is a RTWstate! 
+Route 1 Bel Air Plaza Unionize Passed and is a RTWstate! 
+50 E & Thompson Creek, Kent Island Unionize Passed and is a RTWstate! 
+Burton & Rosemont Unionize Passed and is a RTWstate! 
+Main & Liberty Unionize Passed and is a RTWstate! 
+South University & Church Unionize Passed and is a RTWstate! 
+State & Liberty Unionize Passed and is a RTWstate! 
+Jackson & Zeeb Unionize Passed and is a RTWstate! 
+Glencoe Crossing Unionize Passed and is a RTWstate! 
+Grand River & Stoddard Unionize Passed and is a RTWstate! 
+Miller Road & I-75 Unionize Passed and is a RTWstate! 
+Lake Lansing & Kerry St Unionize Passed and is a RTWstate! 
+S. Saginaw Street Did not pass Unization.
+The Mall at Partridge Creek Unionize Passed and is a RTWstate! 
+Carpenter Rd. Unionize Passed and is a RTWstate! 
+300 Snelling Unionize Passed and is a RTWstate! 
+47th and Cedar Unionize Passed and is a RTWstate! 
+37th & Silver Lake Road Unionize Passed and is a RTWstate! 
+5351 Lyndale Avenue South Did not pass Unization.
+Mall of America - First Level Unionize Passed and is a RTWstate! 
+Hwy 169 & Anderson Lakes Pkwy Did not pass Unization.
+E 39th and Arrowhead Unionize Passed and is a RTWstate! 
+Natural Bridge & St. Charles Rock Rd Did not pass Unization.
+Lindbergh & Clayton Unionize Passed and is a RTWstate! 
+Kings & Chippewa Unionize Passed and is a RTWstate! 
+Hampton & Wise Unionize Passed and is a RTWstate! 
+41st & Main Unionize Passed and is a RTWstate! 
+Hwy 141 & I-44 Unionize Passed and is a RTWstate! 
+Pride Drive & Blowing Rock Road Unionize Passed and is a RTWstate! 
+Wake Forest Rd and Six Forks Rd Did not pass Unization.
+Charlotte Street Did not pass Unization.
+Hopewell Unionize Passed and is a RTWstate! 
+1087 White Horse Ave Unionize Passed and is a RTWstate! 
+Summit Unionize Passed and is a RTWstate! 
+Elmwood Unionize Passed and is a RTWstate! 
+Genessee St Unionize Passed and is a RTWstate! 
+Camp Road Hamburg Did not pass Unization.
+Sheridan & Bailey Unionize Passed and is a RTWstate! 
+Transit Commons / Depew Unionize Passed and is a RTWstate! 
+New York Reserve Roastery Unionize Passed and is a RTWstate! 
+Delaware & Chippewa Unionize Passed and is a RTWstate! 
+Mount Hope Ave Unionize Passed and is a RTWstate! 
+Brighton Monroe & Clover Unionize Passed and is a RTWstate! 
+College Ave Unionize Passed and is a RTWstate! 
+Commons Unionize Passed and is a RTWstate! 
+Meadow St Unionize Passed and is a RTWstate! 
+Astor Place / Lafayette & 8th St Unionize Passed and is a RTWstate! 
+Massapequa Village Square Unionize Passed and is a RTWstate! 
+Ceasar's Bay Shopping Center Unionize Passed and is a RTWstate! 
+The Gardens Did not pass Unization.
+Latham Plaza Unionize Passed and is a RTWstate! 
+Nanuet Unionize Passed and is a RTWstate! 
+Astoria Blvd & 31st St Unionize Passed and is a RTWstate! 
+Stuyvesant Plaza Unionize Passed and is a RTWstate! 
+Gallery Shopping Center at Westbury Unionize Passed and is a RTWstate! 
+East Robinson at Niagara Falls Blvd Unionize Passed and is a RTWstate! 
+154 N Seventh St. - Starbucks Reserve Unionize Passed and is a RTWstate! 
+31st St & Ditmars Blvd - Astoria Unionize Passed and is a RTWstate! 
+6th Street Unionize Passed and is a RTWstate! 
+88 E. Broad Street Unionize Passed and is a RTWstate! 
+4th and Vine Unionize Passed and is a RTWstate! 
+Westerville Unionize Passed and is a RTWstate! 
+23rd & Robinson Unionize Passed and is a RTWstate! 
+36th & May Unionize Passed and is a RTWstate! 
+Hwy 9 & Classen Blvd Did not pass Unization.
+29th & Willamette Unionize Passed and is a RTWstate! 
+U of O Erb Memorial Student Union Unionize Passed and is a RTWstate! 
+Franklin & Villard Unionize Passed and is a RTWstate! 
+7th & Washington Unionize Passed and is a RTWstate! 
+Delta & Green Acres Unionize Passed and is a RTWstate! 
+Oakway Mall Did not pass Unization.
+Valley River Drive Unionize Passed and is a RTWstate! 
+West 11th & Acorn Park Unionize Passed and is a RTWstate! 
+SE Powell & 28th Unionize Passed and is a RTWstate! 
+23rd & Burnside Unionize Passed and is a RTWstate! 
+NE Grand & Lloyd Unionize Passed and is a RTWstate! 
+5th & Oak / US Bank Tower Unionize Passed and is a RTWstate! 
+Westmoreland Unionize Passed and is a RTWstate! 
+Garden Home Unionize Passed and is a RTWstate! 
+Walker & Schendel Unionize Passed and is a RTWstate! 
+Jenkins at Cedar Hills Crossing Unionize Passed and is a RTWstate! 
+N. Center Dr & Tomahawk Island Dr Unionize Passed and is a RTWstate! 
+Kearney Plaza Unionize Passed and is a RTWstate! 
+28th & Burnside Unionize Passed and is a RTWstate! 
+Clackamas Crossing Unionize Passed and is a RTWstate! 
+Bloomfield, Liberty Ave Unionize Passed and is a RTWstate! 
+Amos Hall Unionize Passed and is a RTWstate! 
+20th & Market Unionize Passed and is a RTWstate! 
+Penn Medicine Perelman Center Unionize Passed and is a RTWstate! 
+Walnut & 34th Unionize Passed and is a RTWstate! 
+9th & South Unionize Passed and is a RTWstate! 
+Callowhill Did not pass Unization.
+Market Square Unionize Passed and is a RTWstate! 
+Eastside Unionize Passed and is a RTWstate! 
+Penn Center East Unionize Passed and is a RTWstate! 
+12th St. & Walnut Unionize Passed and is a RTWstate! 
+Greengate Centre Unionize Passed and is a RTWstate! 
+Craig Street Unionize Passed and is a RTWstate! 
+I-85 & Pelham Pkwy Unionize Passed and is a RTWstate! 
+Millwood Ave & Butler St. Unionize Passed and is a RTWstate! 
+I-85 & Clemson Blvd Unionize Passed and is a RTWstate! 
+I-75 at Merchant Drive Unionize Passed and is a RTWstate! 
+Kingston Pike & Montvue Unionize Passed and is a RTWstate! 
+Fortress and John Rice Did not pass Unization.
+Poplar & Highland Unionize Passed and is a RTWstate! 
+45th & N. Lamar Unionize Passed and is a RTWstate! 
+W. 24th & Nueces (White House) Unionize Passed and is a RTWstate! 
+410 & Vance Jackson Unionize Passed and is a RTWstate! 
+Houston & St. Mary's Unionize Passed and is a RTWstate! 
+Rayzor Branch Unionize Passed and is a RTWstate! 
+Highland Dr and Fort Union Blvd Unionize Passed and is a RTWstate! 
+Huntsman Square Did not pass Unization.
+Midlothian & Carmia Way Unionize Passed and is a RTWstate! 
+Broad and Willow Lawn Unionize Passed and is a RTWstate! 
+Forest Hill Ave Unionize Passed and is a RTWstate! 
+Westchester Commons Unionize Passed and is a RTWstate! 
+Huguenot Village Shopping Center Unionize Passed and is a RTWstate! 
+Gallows and Gatehouse Unionize Passed and is a RTWstate! 
+Leesburg Plaza Unionize Passed and is a RTWstate! 
+2003 S. Main St Unionize Passed and is a RTWstate! 
+Oyster Point Shoppes Unionize Passed and is a RTWstate! 
+Nuckols Rd & Twin Hickory Did not pass Unization.
+The Bridges Roanoke Unionize Passed and is a RTWstate! 
+Cascade Marketplace Unionize Passed and is a RTWstate! 
+Arthur Ashe Blvd & Myers Unionize Passed and is a RTWstate! 
+Broadway & Denny Unionize Passed and is a RTWstate! 
+Starbucks Reserve Roastery Unionize Passed and is a RTWstate! 
+Cooper Point Village Unionize Passed and is a RTWstate! 
+Holman Rd Unionize Passed and is a RTWstate! 
+2344 Eastlake Unionize Passed and is a RTWstate! 
+505 Union Station Unionize Passed and is a RTWstate! 
+37th & Broadway Unionize Passed and is a RTWstate! 
+5th & Pike Unionize Passed and is a RTWstate! 
+1200 Westlake Ave Did not pass Unization.
+E. Olive Way Unionize Passed and is a RTWstate! 
+Capitol Blvd & Trosper St, Tumwater Unionize Passed and is a RTWstate! 
+Lakewood Crossing - Marysville Unionize Passed and is a RTWstate! 
+Iowa & King Unionize Passed and is a RTWstate! 
+4147 University Way Avenue Unionize Passed and is a RTWstate! 
+Madison Park Unionize Passed and is a RTWstate! 
+Cordata Center Unionize Passed and is a RTWstate! 
+Howell & Puetz Unionize Passed and is a RTWstate! 
+McDill & Crossroads Unionize Passed and is a RTWstate! 
+Northland & Richmond Unionize Passed and is a RTWstate! 
+Capitol Square - Main & MLK Unionize Passed and is a RTWstate! 
+There are 216 stores available.
+
+Details of store number -1:
+Error: Store Number: -1is out of range or is not currently available
+
+Details of store number 0:
+Store Name: 20th Street and 3rd Ave
+location: Birmingham, AL AL
+Result of the the Unionized Voting is: yes, unionized
+
+Details of store number 1:
+Store Name: Power & Baseline Road
+location: Mesa, AZ AZ
+Result of the the Unionized Voting is: yes, unionized
+
+Details of store number 20:
+Store Name: E Colfax Ave
+location: Denver, CO CO
+Result of the the Unionized Voting is: yes, unionized
+
+Details of store number 216:
+Error: Store Number: 216is out of range or is not currently available
+
+errContent:
+Passed in testStarbucksCorporationMain():
+In main(): Done.
