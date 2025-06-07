@@ -1,5 +1,7 @@
 package edu.foothill.cs1a.finalexam;
 
+import java.util.HashSet;
+
 /**
  * An instance of type StarbucksCorporation keeps track of all StarbucksStore
  * elements that are added to the corporation. Enables the user to ask some
@@ -8,9 +10,14 @@ package edu.foothill.cs1a.finalexam;
 public class StarbucksCorporation
 {
     // TODO: Define the following attributes with "private" visibility:
-    // "allStores" a one-dimensional array of StarbuckStore objects, which keeps track of
+    // "allStores" a one-dimensional array of StarbuckStore objects, which keeps
+    // track of
     // all stores in our test set.
     // "MIN_NUM_STORES" a constant of type int set to the value 2.
+    private int count = 0;
+    static int MIN_NUM_STORES = 2;
+    private StarbucksStore[] allStores;
+    /*@param: one dimensional list set to all stores, MIN_NUM_STORES is set to 2 both private */
     /**
      * Hard-coded 2D array representation of a data input file. Note: 2D array
      * should not be referenced outside of this class. The number of indices for
@@ -452,11 +459,13 @@ public class StarbucksCorporation
             { "Capitol Square - Main & MLK", "Madison, WI", "WI", "Yes", "3/29/22", "6/30/22", "93", "15", "1", "16",
                     "22", "0.7273", "0.875", "0.9375", "Yes" } };
 
+    
+    /*set the complete data to a list*/
+
     /**
-     * Performs a run using all of the data and displaying some of the data.
-     * 
-     * @param args not used.
+     * Performs a run using all of the data and displaying some of the data. @param: 0 arguments.
      */
+     
     public static void main(String[] args)
     {
         StarbucksCorporation starbucksCorporation = null;
@@ -482,8 +491,17 @@ public class StarbucksCorporation
         {
             System.out.println("\nDetails of store number " + storeNumber + ":");
             // TODO: Catch IndexOutOfBoundsException
-            store = starbucksCorporation.getStoreNumber(storeNumber);
-            store.printStore();
+            /*@param: catch out of bounds exception. I used a "try/catch". This acts similar to if/then, except it is used 
+             * to catch things like errors or if one doesn't know exact parameters where they need scenario to work. */
+            try
+            {
+                store = starbucksCorporation.getStoreNumber(storeNumber);
+                store.printStore();
+            } catch (IndexOutOfBoundsException e)
+            {
+                System.out.println("Error: " + e.getMessage());
+            }
+
         }
     }
 
@@ -495,17 +513,54 @@ public class StarbucksCorporation
     // If the value for expected number of stores is less than MIN_NUM_STORES, then
     // initialize allStores to be hold MIN_NUM_STORES number of StarbucksStore
     // objects.
-    public StarbucksCorporation(/* TODO: complete method signature */)
+    public StarbucksCorporation(int expectedNumberOfStores)
     {
+        /*@param: complete Method Signature, receives int for argument, initialize attribute
+         * "allStores". I set it to the minimum if it were lower than the expectedNumberOfStores*/
         // TODO: Initialize attribute(s)
+        if (expectedNumberOfStores < MIN_NUM_STORES)
+        {
+            this.allStores = new StarbucksStore[MIN_NUM_STORES];
+        } else
+        {
+            this.allStores = new StarbucksStore[expectedNumberOfStores];
+        }
     }
 
-    // TODO: Complete the method to add a Starbuck object to "allStores" array.
+    public StarbucksCorporation()
+    {
+        /*This is a setter method it sets the corporation to no few */
+        String storeName = "unknown";
+        String location = "unknown";
+        String state = "unknown";
+        boolean RTWstate = false;
+        int votedYes = 1;
+        int votedNo = 0;
+        boolean results = true;
+        
+        
+    }
+
+    // TODO: Complete the method to add a Starbucks object to "allStores" array.
     // Return true if there was space to add the StarbucksStore and the
     // store object is not null.
     // Otherwise, returns false to indicate the store was not added.
-    public boolean addStore(/* TODO: complete method signature */)
+    public boolean addStore(StarbucksStore storeName)/* TODO: complete method signature */
     {
+
+        if (storeName == null)
+        {
+            return false;
+        }
+        for (int index = 0; index < allStores.length; index++)
+        {
+            if (allStores[index] == null)
+            {
+                allStores[index] = storeName;
+                return true;
+            }
+        }
+        return false;
     }
 
     // TODO: Define a getter (i.e. Accessor) method for "allStores"
@@ -513,14 +568,27 @@ public class StarbucksCorporation
     // StarbucksStores in the original order stored.
     public StarbucksStore[] getAllStores()
     {
+        return this.allStores;
     }
 
     // TODO: Define a getter (i.e. accessor) method for the number of stores with
     // Right-to-Work laws.
     // Receives zero arguments and returns a value of type int.
     public int getNumRTW()
-    {
-    }
+    { 
+        for (int count = 0; count > 0; count++)
+        {
+            for (int yesVotes = 0; yesVotes > 0; yesVotes++)
+            {
+                count = yesVotes;
+                allStores[count] = allStores[count++];
+            }
+            
+        }
+         return count;   
+        }
+
+    
 
     // TODO: Define a getter (i.e. accessor) method for the number of stores that
     // have a yes
@@ -528,6 +596,7 @@ public class StarbucksCorporation
     // Receives zero arguments and returns a value of type int.
     public int getNumYesVoteResults()
     {
+        return this.getNumRTW();
     }
 
     // TODO: Define a getter (i.e. Accessor) method for the name of stores.
@@ -535,6 +604,24 @@ public class StarbucksCorporation
     // the name of stores in the original order stored.
     public String[] getStoreNames()
     {
+        int actualStoreCount = 0;
+        if (allStores != null)
+        {
+            for (StarbucksStore store : allStores)
+            {
+                actualStoreCount++;
+            }
+        }
+        String[] storeNames = new String[actualStoreCount];
+        int index = 0;
+        if (allStores != null)
+        {
+            for (StarbucksStore store : allStores)
+            {
+                storeNames[index++] = store.getStoreName();
+            }
+        }
+        return storeNames;
     }
 
     // TODO: Define a getter (i.e. accessor) method that returns a Starbucks store
@@ -543,6 +630,13 @@ public class StarbucksCorporation
     // returns the Starbucks store at the specied position if it exists.
     public StarbucksStore getStoreNumber(int requestedStoreNumber) throws IndexOutOfBoundsException
     {
+        if (allStores == null || requestedStoreNumber < 0 || 
+                requestedStoreNumber >= allStores.length || allStores[requestedStoreNumber] == null)
+        {
+            throw new IndexOutOfBoundsException("Store Number: " + requestedStoreNumber +
+                    "is out of range or is not currently available");
+        }
+        return allStores[requestedStoreNumber];
     }
 
     /**
@@ -568,6 +662,7 @@ public class StarbucksCorporation
 
             // Add the store to this corporation
             this.addStore(store);
+            
         } // end of iterating over all data
     }
 
@@ -577,6 +672,18 @@ public class StarbucksCorporation
     // and a String representation of all the stores.
     public void printAllStores()
     {
+       System.out.println("Total stores in corportation: " + sizeOfCorporation());
+       if (allStores != null)
+       {
+           for (int index = 0; index < allStores.length; index++)
+           {
+               if (allStores[index] != null)
+               {
+                   System.out.println("\n--- Store " + index + " ---");
+                   allStores[index].printStore();
+               }
+           }
+       }
     }
 
     // TODO: Define a getter (i.e. Accessor) method for the number of elements in
@@ -584,5 +691,17 @@ public class StarbucksCorporation
     // to receive zero arguments and to return an int.
     public int sizeOfCorporation()
     {
+        int count = 0;
+        if (allStores != null)
+        {
+            for (StarbucksStore store : allStores)
+            {
+                if (store != null)
+                {
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 }
